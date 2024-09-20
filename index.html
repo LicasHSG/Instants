@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="PT-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./style.css">
-        <title>O Safra</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>O Safra</title>
+</head>
 <body>
     <div class="container">
-        <input type="image" id="image" src="./rebutton.png" / onclick="play()">
-      </div>
-      <h1>EEEH HEHEHE</h1>
+        <button id="playButton">
+            <img src="/assets/rebutton.png" alt="Play">
+        </button>
+    </div>
+    <h1>EEEH HEHEHE</h1>
 
-      <script>
-        function play() {
-          var audio = document.getElementById("audio");
-          audio.play();
-        }
-      </script>
-      <audio id="audio" src="./eheheheheheee.ogg"></audio>
-  
+    <audio id="audio" src="./assets/eheheheheheee.ogg"></audio>
 
+    <script>
+        document.getElementById("playButton").addEventListener("click", function() {
+            var audio = document.getElementById("audio");
+            audio.play().catch(function(error) {
+                console.error("Erro ao tentar reproduzir o áudio:", error);
+            });
+        });
+    </script>
 </body>
+</html>
