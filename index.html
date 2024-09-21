@@ -8,19 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <button id="playButton"> Play</button>
+        <button id="playButton">
+            ▶
+        </button>
     </div>
     <h1 class="tituloBotao">EEEH HEHEHE</h1>
 
     <audio id="audio" src="./assets/eheheheheheee.mp3"></audio>
 
     <script>
+        var audio = document.getElementById("audio");
+
+        // Adicionando tanto click quanto touchstart
         document.getElementById("playButton").addEventListener("click", function() {
-            var audio = document.getElementById("audio");
+            playAudio();
+        });
+
+        document.getElementById("playButton").addEventListener("touchstart", function() {
+            playAudio();
+        });
+
+        function playAudio() {
             audio.play().catch(function(error) {
                 console.error("Erro ao tentar reproduzir o áudio:", error);
             });
-        });
+        }
     </script>
 </body>
 </html>
