@@ -8,13 +8,13 @@
     border: none;
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 70px;
+    padding: 0 0 0 15px;
     cursor: pointer;
     outline: none;
     display: flex;
     margin: 20px 20px ;
 }
-
 #playButton:hover {
     background-color: #45a049;
 }
