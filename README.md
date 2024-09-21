@@ -2,4 +2,4 @@
 
 <p align="center" > <strong>Projeto de transferencia de arquivos ainda em desenvolvimento</strong></p>
 
-<a href="https://licashsg.github.io/Instants/">Home</a> </h1>
+<a align="center" href="https://licashsg.github.io/Instants/">Home</a> </h1>
