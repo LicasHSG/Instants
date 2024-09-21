@@ -1,12 +1,32 @@
+
+/* Estilo para o botão redondo */
 #playButton {
-    width: 60px; /* ajuste conforme necessário */
-    height: 60px; /* ajuste conforme necessário */
-    border: none; /* remove a borda padrão do botão */
-    background: none; /* remove o fundo padrão do botão */
-    padding: 0; /* remove o preenchimento */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    margin: 20px 20px ;
 }
 
-#playButton img {
-    width: 100%; /* faz a imagem ocupar todo o espaço do botão */
-    height: auto; /* mantém a proporção da imagem */
+#playButton:hover {
+    background-color: #45a049;
+}
+
+#playButton:active {
+    background-color: #3e8e41;
+}
+
+.container {
+    display: flex;
+}
+
+h1{
+    font-size: 20px;
 }
